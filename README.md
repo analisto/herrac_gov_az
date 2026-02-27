@@ -1,80 +1,114 @@
-# Fraud Risk Business Review (Oct 2024 Transactions)
+# Herrac.gov.az Auction Portfolio — Business Insight Report
 
-This report translates the transaction data into business decisions. It focuses on where risk concentrates, how it shifts by channel, location, time, and amount, and what actions would reduce loss and exposure.
+**Data snapshot:** 27 February 2026 · 66 active auctions · Total listed value: ₼28.5 million
 
-**Executive Snapshot**
-- Total transactions: 74,979
-- Transactions flagged as fraud: 7,288 (9.7%)
-- The highest-risk exposure is concentrated in specific channels, countries, and time windows.
+---
 
-**Channel Risk Concentration**
-The chart shows the share of transactions flagged as fraud by channel. In this data, every point-of-sale (POS) transaction is flagged (3,124 transactions), while web and mobile are far lower. This is an immediate control or labeling issue with high business impact.
+## Executive Summary
 
-Why it matters: A single channel driving all flagged activity can mask other risks and distort loss trends.
+The current auction portfolio is dominated by residential real estate and is concentrated in the sub-₼100K price range. Despite 66 live or scheduled auctions, buyer participation is critically low — fewer than 11% of lots have attracted even a single registered bidder. A significant portion of inventory (17%) is being re-listed for a second time after failing to sell in round one. Immediate attention is needed to improve demand stimulation, pricing strategy, and targeted outreach before further lots expire unsold.
 
-Decisions to inform:
-- Trigger an immediate review of POS processing rules and merchant configurations.
-- Add temporary friction or limits to POS transactions until root cause is confirmed.
-- Re-check labeling logic for POS to ensure fraud flags reflect real outcomes.
+---
 
-![Share of Transactions Flagged as Fraud by Channel](charts/fraud_share_by_channel.png)
+## 1. What Is Being Sold?
 
-**Geographic Exposure (Top 10 by Volume)**
-This chart shows transaction volume by country with fraud counts stacked on top. Brazil, Russia, Mexico, and Nigeria show materially higher fraud counts and shares than peer markets such as the UK, Canada, France, Singapore, Australia, and Japan.
+![Portfolio Overview](charts/01_portfolio_overview.png)
 
-Why it matters: High-volume markets with elevated fraud share drive the largest financial exposure.
+**What the chart shows:** The left panel counts auctions by property type; the right panel shows the total monetary value each segment represents.
 
-Decisions to inform:
-- Apply tighter thresholds or step-up verification in high-exposure markets.
-- Prioritize regional fraud operations and partner reviews in the riskiest countries.
-- Rebalance growth targets based on risk-adjusted volume.
+The portfolio consists of five property types. Private houses (23 lots) and apartments (16 lots) together make up nearly 60% of all listings. Vehicles (12 lots) and commercial properties (13 lots) account for the remainder.
 
-![Transaction Volume and Fraud Counts by Country](charts/volume_and_fraud_by_country_top10.png)
+However, the **value picture is completely inverted**. Commercial properties represent just 20% of auction count but contain **₼24.1 million — over 84% of the portfolio's total listed value**. This concentration is driven by a small number of high-value commercial lots, including one listed above ₼21 million.
 
-**Amount Bands with Elevated Risk**
-The chart shows the share of transactions flagged as fraud by amount band. The smallest transactions ($0-$50) show the highest fraud share, and elevated risk appears again in mid-to-high bands ($2,500-$20,000).
+**Business implication:** The portfolio's financial exposure is overwhelmingly concentrated in commercial real estate. A failure to sell even one or two of these lots has a far greater revenue impact than the entire residential segment going unsold. Commercial lots deserve dedicated marketing and buyer outreach beyond the standard auction platform.
 
-Why it matters: Fraud is not only a large-ticket problem. Micro-transaction abuse can create significant cumulative loss and noise, while high-value bands raise direct financial exposure.
+---
 
-Decisions to inform:
-- Add friction for repeated low-value transactions (limits, velocity checks, or step-up prompts).
-- Increase scrutiny for mid-to-high value bands where fraud share is elevated.
-- Review pricing and fee impacts for high-risk amount ranges.
+## 2. How Are Prices Distributed?
 
-![Fraud Share by Transaction Amount Band](charts/fraud_share_by_amount_band.png)
+![Price Band Distribution](charts/02_price_band_distribution.png)
 
-**Time-of-Day Risk Window**
-The chart shows fraud share by hour. The peak risk window is around 01:00, while the lowest risk appears around 18:00.
+**What the chart shows:** The number of auctions falling into each price range, from under ₼20,000 to above ₼500,000.
 
-Why it matters: Risk is time-sensitive, which can guide staffing, alerting, and automated controls.
+Almost half of all auctions (49 out of 66) are priced below ₼100,000. This positions the platform primarily as a marketplace for affordable assets. Only 3 lots are listed above ₼500,000 — yet these account for a disproportionate share of total portfolio value.
 
-Decisions to inform:
-- Schedule enhanced monitoring and faster intervention during high-risk hours.
-- Prioritize real-time rules and automation overnight when risk spikes.
+**Business implication:** The platform has a strong volume base in accessible price points, which should attract a broad buyer base — provided awareness and trust are built. The upper price tiers require a different acquisition strategy, likely involving institutional or business buyers rather than individual buyers.
 
-![Fraud Share by Hour of Day](charts/fraud_share_by_hour.png)
+---
 
-**City Size Exposure**
-The chart compares fraud share by city size. Medium-sized cities represent most transactions and carry a materially higher fraud share than large cities.
+## 3. How Much of the Portfolio Is Live Right Now?
 
-Why it matters: Risk concentration by city size helps target operational controls and partner oversight.
+![Auction Status by Category](charts/03_auction_status_by_category.png)
 
-Decisions to inform:
-- Allocate additional review capacity for medium-city transaction flows.
-- Tailor merchant enablement or onboarding criteria for medium-city markets.
+**What the chart shows:** For each property type, how many auctions are currently live ("ONGOING") versus scheduled to start ("NOT STARTED").
 
-![Fraud Share by City Size](charts/fraud_share_by_city_size.png)
+37 out of 66 auctions are currently live and accepting bids. The remaining 29 are scheduled but not yet open. Vehicles have the highest proportion of live auctions. Apartments and private houses have a roughly equal split of live and upcoming lots.
 
-**High-Risk Merchant Flag Effectiveness**
-The chart shows similar fraud shares for transactions flagged as high-risk merchants versus those that are not. The current flag does not separate risk in a meaningful way.
+**Business implication:** There is a pipeline of 29 upcoming auctions that need pre-launch promotion. Buyers who are researching today should be made aware of upcoming listings to maximise participation when they open. Email or notification-based alerts for scheduled lots would directly address this gap.
 
-Why it matters: If the flag is not differentiating risk, it can create unnecessary friction and leave real risk unaddressed.
+---
 
-Decisions to inform:
-- Revisit the criteria behind the high-risk merchant flag.
-- Validate whether the flag reflects current business reality or outdated assumptions.
+## 4. Where Are the Buyers?
 
-![Fraud Share by High-Risk Merchant Flag](charts/fraud_share_by_high_risk_flag.png)
+![Buyer Engagement](charts/04_buyer_engagement.png)
 
-**What This Enables**
-These findings point to concrete business levers: channel controls, geographic risk policies, amount-band guardrails, time-based monitoring, and sharper merchant risk criteria. Together, they can reduce loss, improve operational focus, and support risk-adjusted growth.
+**What the chart shows:** The left panel shows the total number of registered bidders across all lots in each category. The right panel shows what percentage of lots in each category have at least one registered bidder.
+
+This is the most critical finding in the entire dataset. **59 out of 66 lots (89%) have zero registered bidders.** Apartments have attracted the most interest (8 total bidders across 16 lots), but even here only a fraction of listings have any participation. Private houses — the largest category — have zero bidder registrations.
+
+The right panel shows engagement rates well below 50% across every category, indicating a systemic demand-side problem, not a pricing issue specific to any one property type.
+
+**Business implication:** The platform is not converting visitors into active participants. Possible causes include limited awareness, friction in the registration process, lack of trust, or insufficient marketing reach. Solving this is the single highest-priority action: even doubling the engagement rate from 11% to 22% would significantly improve sale outcomes and revenue.
+
+---
+
+## 5. How Much Inventory Is Being Re-Listed?
+
+![Round Analysis](charts/05_round_analysis.png)
+
+**What the chart shows:** The left panel compares how many lots are in their first listing versus being re-listed (Round 2). The right panel compares the average price between the two rounds.
+
+11 lots (17% of the portfolio) are in their second auction round, meaning they failed to attract a buyer during their first listing. Private houses account for the highest number of re-listed properties. The average price of Round 2 lots (≈₼119K) is lower than Round 1 (≈₼487K), suggesting these are mid-range assets.
+
+**Business implication:** Re-listed inventory is a direct signal that the first auction failed — usually due to insufficient buyer interest, unrealistic pricing, or poor visibility. Each re-listing cycle delays revenue collection and increases administrative overhead. A structured review of pricing and a targeted re-marketing campaign for Round 2 lots should be conducted before they expire again.
+
+---
+
+## 6. Which Auctions Are About to Close?
+
+![Closing Urgency](charts/06_closing_urgency.png)
+
+**What the chart shows:** All lots closing within the next 14 days, sorted by days remaining. Red bars indicate lots closing within 3 days; blue bars within 7 days.
+
+Several lots are expiring imminently — some have already passed their closing date (shown as negative days). For these, immediate action is required: either close the auction, extend the deadline, or begin the re-listing process. A cluster of lots across all categories will close within the next 7 days.
+
+**Business implication:** Auctions that close without a buyer represent a complete loss of the listing cycle and delay asset monetisation. For lots with 3 or fewer days remaining and no bidders, a short-term extension or urgent targeted outreach (to known interested buyers in that asset class) could still convert a sale. This chart should be reviewed daily as a live operational dashboard.
+
+---
+
+## 7. What Is the Real Cost of an Apartment?
+
+![Apartment Price per m²](charts/07_apartment_price_per_m2.png)
+
+**What the chart shows:** Each apartment listed on the platform, ranked by its price per square metre. The dashed line shows the portfolio average of ₼1,980 per m².
+
+There is a wide spread in value across apartment listings — from ₼1,069/m² at the most affordable end to ₼5,934/m² at the high end. The outlier at the top of the chart is priced nearly three times the portfolio average, which may reflect a premium location or a listing that requires pricing review.
+
+**Business implication:** Buyers comparing apartments on price alone may overlook value differences driven by location, floor, or size. Highlighting price per m² as a standard metric on the platform would help buyers make more informed decisions and could increase engagement. For the highest-priced lots that remain without bidders, a pricing benchmark review against comparable market transactions is advisable.
+
+---
+
+## Summary of Recommended Actions
+
+| Priority | Action | Impact |
+|----------|--------|--------|
+| **Critical** | Launch a buyer acquisition and awareness campaign | Addresses 89% zero-engagement rate |
+| **Critical** | Review lots expiring within 3 days — extend or escalate | Prevents total loss of listing cycle |
+| **High** | Dedicated outreach for commercial properties | Protects ₼24M+ in portfolio value |
+| **High** | Audit Round 2 lots for pricing alignment | Reduces re-listing cycle losses |
+| **Medium** | Implement pre-launch notifications for upcoming auctions | Builds pipeline awareness |
+| **Medium** | Add price-per-m² display to apartment listings | Improves buyer decision quality |
+
+---
+
+*Report generated from live auction data on 27 February 2026. Data sourced from the Herrac State Auction Platform (herrac.gov.az).*
